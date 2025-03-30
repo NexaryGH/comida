@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Ley de Alimentación Escolar en México</title>
+    <style>
+        :root {
+            --primary: #2E7D32;
+            --secondary: #FFD54F;
+            --dark: #263238;
+            --light: #F5F5F5;
+            --accent: #00796B;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1529390079861-4e5f59e6637e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400&q=80') center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        
+        .countdown {
+            background-color: var(--secondary);
+            color: var(--dark);
+            text-align: center;
+            padding: 1rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .info-section {
+            margin-bottom: 3rem;
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+        }
+        
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-img {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .card h3 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        
+        .card p {
+            margin-bottom: 1rem;
+        }
+        
+        .icon-list {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+        
+        .icon-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        
+        .icon {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            margin-right: 1rem;
+            color: var(--primary);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .alert {
+            background-color: #FFECB3;
+            border-left: 4px solid #FFC107;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        
+        .faq {
+            margin-top: 2rem;
+        }
+        
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #E0E0E0;
+            padding-bottom: 1rem;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+        
+        .footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .footer p {
+            margin: 1rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            main {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Educación Saludable México</h1>
+    </header>
+    
+    <div class="hero">
+        <h1>Nueva Ley de Alimentación Escolar</h1>
+        <p>Promoviendo una alimentación saludable en nuestras escuelas para un mejor futuro</p>
+    </div>
+    
+    <div class="countdown">
+        <p>🚨 La prohibición de venta de comida chatarra en escuelas públicas entra en vigor HOY: 29 de marzo de 2025</p>
+    </div>
+    
+    <main>
+        <section class="info-section">
+            <h2>📢 ¿Qué cambia a partir de hoy?</h2>
+            <p>A partir del 29 de marzo de 2025, queda prohibida la venta de comida chatarra en escuelas públicas mexicanas en todos los niveles educativos, incluyendo:</p>
+            
+            <ul class="icon-list">
+                <li>
+                    <div class="icon">📚</div>
+                    <div>Educación básica (preescolar, primaria y secundaria)</div>
+                </li>
+                <li>
+                    <div class="icon">🏫</div>
+                    <div>Educación media superior (preparatoria)</div>
+                </li>
+                <li>
+                    <div class="icon">🎓</div>
+                    <div>Formación para el trabajo</div>
+                </li>
+                <li>
+                    <div class="icon">🏛️</div>
+                    <div>Educación superior (universidad)</div>
+                </li>
+            </ul>
+            
+            <p>Esta medida aplica tanto para la modalidad escolarizada como para la modalidad mixta de educación.</p>
+            
+            <div class="alert">
+                <strong>⚠️ Importante:</strong> Todos los alimentos y bebidas que se preparen, distribuyan o vendan en las escuelas deberán cumplir con ser económicamente accesibles, de bajo impacto ambiental, naturales y de temporada.
+            </div>
+        </section>
+        
+        <section class="info-section">
+            <h2>❌ Productos prohibidos</h2>
+            <p>A partir de hoy, los siguientes productos ya no podrán venderse en las escuelas públicas:</p>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Bebidas azucaradas</h3>
+                        <p>Refrescos, jugos y néctares industrializados que contienen altas cantidades de azúcar.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1613336026275-d6d473981d9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Botanas empacadas</h3>
+                        <p>Papas fritas, frituras de maíz y otras botanas industrializadas altas en sodio y grasas.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1605540436563-5bca919ae766?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Dulces y golosinas</h3>
+                        <p>Caramelos, chocolates y otros dulces con alto contenido de azúcar.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Productos de panadería</h3>
+                        <p>Pasteles, galletas y otros productos de panadería industrializados con alto contenido de grasas trans y azúcares.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="info-section">
+            <h2>✅ Alternativas saludables</h2>
+            <p>Las escuelas deberán ofrecer opciones de alimentos que cumplan con las siguientes características:</p>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1490818386653-7d8a1468e3d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Alimentos naturales</h3>
+                        <p>Frutas y verduras frescas, preferentemente de temporada y de producción local.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1540420828642-fca2c5c18abe?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Preparaciones saludables</h3>
+                        <p>Comidas preparadas con ingredientes frescos, bajas en sodio y azúcares añadidos.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1600271886742-f049cd3d5129?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Bebidas naturales</h3>
+                        <p>Agua natural, aguas de frutas sin azúcar añadida y bebidas vegetales sin edulcorantes.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1519996529931-28324d5a630e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Productos accesibles</h3>
+                        <p>Alimentos nutritivos a precios accesibles para todos los estudiantes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="info-section">
+            <h2>🎯 Objetivos de la nueva regulación</h2>
+            <p>Esta nueva normativa tiene como propósito principal mejorar los hábitos alimenticios de los estudiantes mexicanos, y busca:</p>
+            
+            <ul class="icon-list">
+                <li>
+                    <div class="icon">🥗</div>
+                    <div>Promover una alimentación más saludable y equilibrada</div>
+                </li>
+                <li>
+                    <div class="icon">💪</div>
+                    <div>Reducir los índices de obesidad infantil y juvenil en México</div>
+                </li>
+                <li>
+                    <div class="icon">🧠</div>
+                    <div>Mejorar el rendimiento académico a través de una mejor nutrición</div>
+                </li>
+                <li>
+                    <div class="icon">🌱</div>
+                    <div>Fomentar un consumo más responsable con el medio ambiente</div>
+                </li>
+                <li>
+                    <div class="icon">🏥</div>
+                    <div>Prevenir enfermedades relacionadas con la mala alimentación</div>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="info-section">
+            <h2>❓ Preguntas frecuentes</h2>
+            
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">¿La prohibición aplica también para escuelas privadas?</div>
+                    <div class="faq-answer">No, la normativa actual se aplica exclusivamente a escuelas públicas. Sin embargo, se recomienda que las instituciones privadas adopten medidas similares para promover la salud de sus estudiantes.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">¿Qué pasa si una escuela incumple con esta regulación?</div>
+                    <div class="faq-answer">Las escuelas que no cumplan con esta normativa podrían enfrentar sanciones administrativas. Se recomienda contactar a las autoridades educativas locales para reportar cualquier incumplimiento.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">¿Los estudiantes pueden llevar comida chatarra de casa?</div>
+                    <div class="faq-answer">La normativa no prohíbe que los estudiantes lleven alimentos desde casa, pero se recomienda a los padres que fomenten hábitos alimenticios saludables también en el hogar.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">¿Cómo se garantizará que los nuevos alimentos sean económicamente accesibles?</div>
+                    <div class="faq-answer">Las autoridades educativas trabajarán con los proveedores de alimentos para asegurar que las opciones saludables tengan precios razonables y accesibles para todos los estudiantes.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>© 2025 - Educación Saludable México</p>
+        <p>Esta información es proporcionada con fines informativos. Para más detalles, consulte los lineamientos oficiales de la Secretaría de Educación Pública.</p>
+    </footer>
+</body>
+</html>
